@@ -28,10 +28,11 @@
 
 <h1>Privacy Policy - CardScanTrader</h1>
 
-<p><strong>Ultimo aggiornamento:</strong> 7 aprile 2026</p>
+<p><strong>Ultimo aggiornamento:</strong> 14 maggio 2026</p>
 
 <p>
-CardScanTrader è un'applicazione che consente di scansionare carte Magic: The Gathering e prepararle per la pubblicazione su CardTrader.
+CardScanTrader è un'applicazione che consente di scansionare carte Magic: The Gathering,
+riconoscerle, gestire una coda/inventario locale e prepararle per la pubblicazione su CardTrader.
 </p>
 
 <hr>
@@ -42,9 +43,11 @@ CardScanTrader è un'applicazione che consente di scansionare carte Magic: The G
 
 <ul>
   <li>Accesso alla fotocamera, utilizzato solo durante la scansione delle carte.</li>
-  <li>Informazioni sulle carte riconosciute (nome, set, collector number).</li>
+  <li>Immagini temporanee delle carte scansionate, salvate nella cache del dispositivo per l’elaborazione.</li>
+  <li>Informazioni sulle carte riconosciute, come nome, set, lingua, collector number, condizione e prezzo.</li>
   <li>Token CardTrader inserito dall’utente, salvato localmente sul dispositivo.</li>
-  <li>Coda temporanea delle carte, salvata localmente.</li>
+  <li>Coda temporanea, inventario, mazzi, preferenze e bozze di pubblicazione salvati localmente.</li>
+  <li>Dati tecnici e diagnostici raccolti da SDK o servizi Google necessari al funzionamento, alla diagnostica e alla stabilità dell’app.</li>
 </ul>
 
 <p>
@@ -56,63 +59,89 @@ L’app non raccoglie né memorizza dati personali su server dello sviluppatore.
 <h2>Uso dei dati</h2>
 
 <ul>
-  <li>Riconoscere le carte scansionate.</li>
+  <li>Riconoscere le carte scansionate tramite fotocamera e riconoscimento testo.</li>
+  <li>Ottenere informazioni, immagini e dati delle carte da servizi esterni.</li>
+  <li>Calcolare o mostrare prezzi e riferimenti di mercato.</li>
   <li>Preparare bozze di pubblicazione.</li>
   <li>Pubblicare carte su CardTrader solo su richiesta esplicita dell’utente.</li>
+  <li>Migliorare stabilità, sicurezza e diagnostica tramite SDK Google.</li>
 </ul>
 
 <hr>
 
-<h2>Condivisione dei dati</h2>
+<h2>Servizi esterni</h2>
 
 <p>Per funzionare correttamente, l’app comunica con servizi esterni:</p>
 
 <ul>
-  <li>API Scryfall per ottenere informazioni sulle carte.</li>
-  <li>API CardTrader per pubblicare le carte.</li>
+  <li>Scryfall, per ottenere informazioni, immagini e dati delle carte.</li>
+  <li>CardTrader, per recuperare dati di mercato, prezzi e pubblicare carte su richiesta dell’utente.</li>
+  <li>Google ML Kit, per il riconoscimento del testo e dati tecnici/diagnostici associati.</li>
+  <li>Google Play, per aggiornamenti dell’app ed eventuali funzionalità premium o abbonamenti.</li>
 </ul>
 
 <p>
-Durante queste operazioni, alcune informazioni (come nome carta, set o token CardTrader) possono essere trasmesse a tali servizi.
+Durante queste operazioni, alcune informazioni come nome carta, set, collector number, lingua,
+token CardTrader o dati tecnici del dispositivo/app possono essere trasmesse ai servizi necessari.
 </p>
 
 <p>
-L’app non vende né condivide dati personali con terze parti per fini commerciali.
+L’app non vende dati personali e non li condivide con terze parti per fini pubblicitari o commerciali.
 </p>
 
 <hr>
 
 <h2>Memorizzazione dei dati</h2>
 
-<p>Tutti i dati dell’utente sono salvati localmente sul dispositivo.</p>
+<p>
+Token CardTrader, inventario, coda, mazzi, preferenze e bozze sono salvati localmente sul dispositivo.
+Le immagini scattate durante la scansione possono essere salvate temporaneamente nella cache del dispositivo
+per consentire l’elaborazione e possono essere rimosse cancellando la cache/dati dell’app o disinstallando l’app.
+</p>
+
+<hr>
+
+<h2>Sicurezza</h2>
+
+<p>
+Le comunicazioni con i servizi esterni avvengono tramite connessioni HTTPS quando supportate.
+I dati salvati localmente restano sul dispositivo dell’utente e sono protetti dalle normali misure di sicurezza del sistema operativo.
+</p>
 
 <hr>
 
 <h2>Permesso fotocamera</h2>
 
-<p>La fotocamera viene utilizzata esclusivamente per la scansione delle carte.</p>
+<p>
+La fotocamera viene utilizzata esclusivamente per la scansione delle carte.
+Le immagini scattate non vengono inviate ai server dello sviluppatore.
+</p>
 
 <hr>
 
 <h2>Abbonamenti</h2>
 
-<p>L’app può offrire funzionalità premium tramite abbonamento mensile gestito da Google Play.</p>
-
-<ul>
-  <li>È prevista una prova gratuita di 7 giorni.</li>
-  <li>L’abbonamento si rinnova automaticamente salvo cancellazione.</li>
-  <li>I pagamenti sono gestiti direttamente da Google.</li>
-  <li>Lo sviluppatore non ha accesso ai dati di pagamento dell’utente.</li>
-</ul>
+<p>
+L’app può offrire funzionalità premium tramite Google Play.
+I pagamenti sono gestiti direttamente da Google e lo sviluppatore non ha accesso ai dati di pagamento dell’utente.
+</p>
 
 <hr>
 
-<h2>Controllo utente</h2>
+<h2>Controllo ed eliminazione dati</h2>
 
 <ul>
-  <li>Rimuovere il token CardTrader dalle impostazioni.</li>
-  <li>Eliminare le carte salvate in qualsiasi momento.</li>
+  <li>È possibile rimuovere il token CardTrader dalle impostazioni dell’app.</li>
+  <li>È possibile eliminare le carte salvate, la coda e i dati locali dall’app.</li>
+  <li>È possibile eliminare tutti i dati locali disinstallando l’app o cancellando i dati dell’app dalle impostazioni Android.</li>
 </ul>
+
+<p>
+Istruzioni per l’eliminazione dei dati:
+<a href="https://stefanus-dev.github.io/cardscantrader-privacy/data-deletion.html">
+https://stefanus-dev.github.io/cardscantrader-privacy/data-deletion.html
+</a>
+</p>
 
 <hr>
 
@@ -124,10 +153,11 @@ L’app non vende né condivide dati personali con terze parti per fini commerci
 
 <h1>Privacy Policy - CardScanTrader (English)</h1>
 
-<p><strong>Last updated:</strong> April 7, 2026</p>
+<p><strong>Last updated:</strong> May 14, 2026</p>
 
 <p>
-CardScanTrader is an application that allows users to scan Magic: The Gathering cards and prepare them for listing on CardTrader.
+CardScanTrader is an application that allows users to scan Magic: The Gathering cards,
+recognize them, manage a local queue/inventory and prepare them for listing on CardTrader.
 </p>
 
 <hr>
@@ -136,9 +166,11 @@ CardScanTrader is an application that allows users to scan Magic: The Gathering 
 
 <ul>
   <li>Camera access, used only during card scanning.</li>
-  <li>Recognized card information (name, set, collector number).</li>
-  <li>CardTrader token stored locally on the device.</li>
-  <li>Temporary card queue stored locally.</li>
+  <li>Temporary card images stored in the device cache for processing.</li>
+  <li>Recognized card information, such as name, set, language, collector number, condition and price.</li>
+  <li>CardTrader token entered by the user and stored locally on the device.</li>
+  <li>Temporary queue, inventory, decks, preferences and listing drafts stored locally.</li>
+  <li>Technical and diagnostic data collected by Google SDKs or services for functionality, diagnostics and app stability.</li>
 </ul>
 
 <p>
@@ -150,60 +182,87 @@ The app does not collect or store personal data on developer-owned servers.
 <h2>Data usage</h2>
 
 <ul>
-  <li>Recognize scanned cards.</li>
+  <li>Recognize scanned cards using the camera and text recognition.</li>
+  <li>Retrieve card information, images and card data from external services.</li>
+  <li>Calculate or display prices and market references.</li>
   <li>Prepare listing drafts.</li>
-  <li>Publish cards on CardTrader only upon user request.</li>
+  <li>Publish cards on CardTrader only upon explicit user request.</li>
+  <li>Improve stability, security and diagnostics through Google SDKs.</li>
 </ul>
 
 <hr>
 
-<h2>Data sharing</h2>
+<h2>External services</h2>
 
 <ul>
-  <li>Scryfall API for card data.</li>
-  <li>CardTrader API for publishing.</li>
+  <li>Scryfall, for card information, images and card data.</li>
+  <li>CardTrader, for market data, prices and user-requested listings.</li>
+  <li>Google ML Kit, for text recognition and related technical/diagnostic data.</li>
+  <li>Google Play, for app updates and possible premium features or subscriptions.</li>
 </ul>
 
 <p>
-Some data (such as card name, set or token) may be transmitted to these services.
+During these operations, information such as card name, set, collector number, language,
+CardTrader token or technical device/app data may be transmitted to the required services.
 </p>
 
 <p>
-The app does not sell or share personal data for commercial purposes.
+The app does not sell personal data and does not share personal data with third parties for advertising or commercial purposes.
 </p>
 
 <hr>
 
 <h2>Data storage</h2>
 
-<p>All user data is stored locally on the device.</p>
+<p>
+The CardTrader token, inventory, queue, decks, preferences and drafts are stored locally on the device.
+Images captured during scanning may be temporarily stored in the device cache for processing and can be removed
+by clearing the app cache/data or uninstalling the app.
+</p>
+
+<hr>
+
+<h2>Security</h2>
+
+<p>
+Communications with external services use HTTPS connections when supported.
+Locally stored data remains on the user’s device and is protected by the standard security measures of the operating system.
+</p>
 
 <hr>
 
 <h2>Camera permission</h2>
 
-<p>Used only for scanning cards.</p>
+<p>
+The camera is used only for card scanning.
+Captured images are not sent to developer-owned servers.
+</p>
 
 <hr>
 
 <h2>Subscriptions</h2>
 
-<ul>
-  <li>A monthly subscription may be offered via Google Play.</li>
-  <li>A 7-day free trial may be available.</li>
-  <li>Subscriptions renew automatically unless canceled.</li>
-  <li>Payments are handled by Google.</li>
-  <li>The developer does not access payment data.</li>
-</ul>
+<p>
+The app may offer premium features through Google Play.
+Payments are handled directly by Google and the developer does not access the user’s payment data.
+</p>
 
 <hr>
 
-<h2>User control</h2>
+<h2>User control and data deletion</h2>
 
 <ul>
-  <li>Users can remove their CardTrader token at any time.</li>
-  <li>Users can delete stored cards at any time.</li>
+  <li>Users can remove their CardTrader token from the app settings.</li>
+  <li>Users can delete saved cards, queue items and local data from the app.</li>
+  <li>Users can delete all local data by uninstalling the app or clearing app data from Android settings.</li>
 </ul>
+
+<p>
+Data deletion instructions:
+<a href="https://stefanus-dev.github.io/cardscantrader-privacy/data-deletion.html">
+https://stefanus-dev.github.io/cardscantrader-privacy/data-deletion.html
+</a>
+</p>
 
 <hr>
 
